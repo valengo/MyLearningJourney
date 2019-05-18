@@ -83,13 +83,15 @@ class Model {
     private init() {
     }
     
-    func getAllSubjectAreas() -> [String] {
-        return [SubjectArea.design.rawValue,
-                SubjectArea.professionalGrowth.rawValue,
-                SubjectArea.coding.rawValue,
-                SubjectArea.successSkills.rawValue,
-                SubjectArea.process.rawValue,
-                SubjectArea.it.rawValue]
+    func getAllSubjectAreas() -> [SubjectAreaRepr] {
+        return [
+            SubjectAreaRepr(id: 1, name: SubjectArea.design.rawValue, subjectArea: SubjectArea.design),
+            SubjectAreaRepr(id: 2, name: SubjectArea.professionalGrowth.rawValue, subjectArea: SubjectArea.professionalGrowth),
+            SubjectAreaRepr(id: 3, name: SubjectArea.coding.rawValue, subjectArea: SubjectArea.coding),
+            SubjectAreaRepr(id: 4, name: SubjectArea.successSkills.rawValue, subjectArea: SubjectArea.successSkills),
+            SubjectAreaRepr(id: 5, name: SubjectArea.process.rawValue, subjectArea: SubjectArea.process),
+            SubjectAreaRepr(id: 6, name: SubjectArea.it.rawValue, subjectArea: SubjectArea.it)
+        ]
     }
     
     func getLearningObjectives(subjectArea: SubjectArea) -> [LearningObjective] {

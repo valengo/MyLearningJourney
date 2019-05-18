@@ -10,6 +10,7 @@ import Foundation
 
 
 struct SubjectAreaRepr {
+    let id: Int
     let name: String
-    let image: String
+    let subjectArea: SubjectArea
 }
