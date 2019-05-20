@@ -23,18 +23,12 @@ class ObjectivesViewController: UITableViewController {
         learningObjectives = ModelManager.shared.getLearningObjectives(subjectArea: subjectArea.area)
         
         self.tableView.contentInset = UIEdgeInsets(top: 30, left: 0, bottom: 0, right: 0)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return learningObjectives.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,55 +40,23 @@ class ObjectivesViewController: UITableViewController {
         
         cell.rootView.layer.cornerRadius = 10.0
         cell.rootView.layer.masksToBounds = true
-        
+
+        let color = Colors.getSubjectColor(subjectArea: subjectArea.area)
+        cell.rootView.backgroundColor = color.withAlphaComponent(1.0)
+
+        let objective = learningObjectives[indexPath.row]
+        cell.nameLabel.text = objective.description
+        cell.codeLabel.text = objective.code
+        cell.topicLabel.text = objective.learningGoal.topic
+
         
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "FullObjectiveViewController") as? FullObjectiveViewController {
+            vc.currentLearningObjective = learningObjectives[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

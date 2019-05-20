@@ -16,15 +16,15 @@ class ModelManager {
     private var learningObjectives: [LearningObjective] = []
     
     private var designGoal = LearningGoal(id: 1,
-                                          topic: "Visual Design and Communication",
+                                          topic: "Visual design and communication",
                                           description: "Understand and apply the fundamental elements of Visual and Communication design.",
                                           label: "Visual Design", subjectArea: SubjectArea.design, code: "TD01")
     private var growthGoal = LearningGoal(id: 2,
-                                          topic: "Professional Empowerment & CV",
+                                          topic: "Professional empowerment & CV",
                                           description: "Empower and improve abilities in order to be prepared for professional future.",
                                           label: "Pro Empowerment", subjectArea: SubjectArea.professionalGrowth, code: "TP01")
     private var codingGoal = LearningGoal(id: 3,
-                                          topic: "Computational Thinking",
+                                          topic: "Computational thinking",
                                           description: "Develop Computational Thinking",
                                           label: "Computational Thinking", subjectArea: SubjectArea.coding, code: "TC02")
     private var skillsGoal = LearningGoal(id: 4,
@@ -44,27 +44,167 @@ class ModelManager {
         return [
             SubjectArea.design: [
                 LearningObjective(id: 1, code: "DE06",
-                                  description: "Apply principles of Motion and Animation Design",
+                                  description: "Apply principles of motion and animation design",
                                   learningGoal: designGoal,
                                   levelDescriptions: [
-                                    "Understand the role of Motion and Animation in UI Design. Recognise different types and contexts of animations",
-                                    "Use standard/native animation in UI design applying principle of motion to convey meaning in interactions",
-                                    "Design animation for different purposes (for example: UI transitions; in Onboarding animated screens)",
-                                    "Provide Guidance for the Design of consistent custom animation systems for UI interactions and animated screens"],
+                                    "Understand the role of motion and animation in UI Design. Recognise different types and contexts of animations.",
+                                    "Use standard/native animation in UI design applying principle of motion to convey meaning in interactions.",
+                                    "Design animation for different purposes (for example: UI transitions; in onboarding animated screens).",
+                                    "Provide guidance for the design of consistent custom animation systems for UI interactions and animated screens."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE19",
+                                  description: "Create interactive/clickable using a variety of tools (e.g. Sketch, Marvel)",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand what an Interactive prototype is, its purpose and value.",
+                                    "Create interactive/clickable prototype using Marvel.",
+                                    "Design interactive prototypes integrating Sketch and Marvel.",
+                                    "Design complex prototypes in Marvel/Sketch. Create design Handoffs and create and export UI flows."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE36",
+                                  description: "Create game assets as GUI, 2D Sprites, 3D Models…",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the difference between an asset for apps creation and assets for a game assets creation.",
+                                    "Apply character design principles and be able to produce 2D game assets.",
+                                    "Create character design and be able to produce 3D game assets.",
+                                    "Provide Guidance to Create Marketing resources and visual identity."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE36",
+                                  description: "Understand the principle of typography. Know the basic terminology (font vs typeface, serif vs sans-serif, ecc.)",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the principle of typography. Know the basic terminology (font vs typeface, serif vs sans-serif, ecc.).",
+                                    "Use principles of typography to provide visual hierarchy/structure.",
+                                    "Apply principles of typography to consistently create text style throughout several screens.",
+                                    "Provide guidance to create a consistent typography system across multiple visual products (app, keynotes, marketing materials)."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE06",
+                                  description: "Apply principles of motion and animation design",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the role of motion and animation in UI Design. Recognise different types and contexts of animations.",
+                                    "Use standard/native animation in UI design applying principle of motion to convey meaning in interactions.",
+                                    "Design animation for different purposes (for example: UI transitions; in onboarding animated screens).",
+                                    "Provide guidance for the design of consistent custom animation systems for UI interactions and animated screens."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE19",
+                                  description: "Create interactive/clickable using a variety of tools (e.g. Sketch, Marvel)",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand what an Interactive prototype is, its purpose and value.",
+                                    "Create interactive/clickable prototype using Marvel.",
+                                    "Design interactive prototypes integrating Sketch and Marvel.",
+                                    "Design complex prototypes in Marvel/Sketch. Create design Handoffs and create and export UI flows."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE36",
+                                  description: "Create game assets as GUI, 2D Sprites, 3D Models…",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the difference between an asset for apps creation and assets for a game assets creation.",
+                                    "Apply character design principles and be able to produce 2D game assets.",
+                                    "Create character design and be able to produce 3D game assets.",
+                                    "Provide Guidance to Create Marketing resources and visual identity."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE36",
+                                  description: "Understand the principle of typography. Know the basic terminology (font vs typeface, serif vs sans-serif, ecc.)",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the principle of typography. Know the basic terminology (font vs typeface, serif vs sans-serif, ecc.).",
+                                    "Use principles of typography to provide visual hierarchy/structure.",
+                                    "Apply principles of typography to consistently create text style throughout several screens.",
+                                    "Provide guidance to create a consistent typography system across multiple visual products (app, keynotes, marketing materials)."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE06",
+                                  description: "Apply principles of motion and animation design",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the role of motion and animation in UI Design. Recognise different types and contexts of animations.",
+                                    "Use standard/native animation in UI design applying principle of motion to convey meaning in interactions.",
+                                    "Design animation for different purposes (for example: UI transitions; in onboarding animated screens).",
+                                    "Provide guidance for the design of consistent custom animation systems for UI interactions and animated screens."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE19",
+                                  description: "Create interactive/clickable using a variety of tools (e.g. Sketch, Marvel)",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand what an Interactive prototype is, its purpose and value.",
+                                    "Create interactive/clickable prototype using Marvel.",
+                                    "Design interactive prototypes integrating Sketch and Marvel.",
+                                    "Design complex prototypes in Marvel/Sketch. Create design Handoffs and create and export UI flows."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE36",
+                                  description: "Create game assets as GUI, 2D Sprites, 3D Models…",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the difference between an asset for apps creation and assets for a game assets creation.",
+                                    "Apply character design principles and be able to produce 2D game assets.",
+                                    "Create character design and be able to produce 3D game assets.",
+                                    "Provide Guidance to Create Marketing resources and visual identity."],
+                                  targetLevel: KnowledgeLevel.novice,
+                                  currentLevel: nil,
+                                  mandatoryLevel: KnowledgeLevel.novice),
+                LearningObjective(id: 1, code: "DE36",
+                                  description: "Understand the principle of typography. Know the basic terminology (font vs typeface, serif vs sans-serif, ecc.)",
+                                  learningGoal: designGoal,
+                                  levelDescriptions: [
+                                    "Understand the principle of typography. Know the basic terminology (font vs typeface, serif vs sans-serif, ecc.).",
+                                    "Use principles of typography to provide visual hierarchy/structure.",
+                                    "Apply principles of typography to consistently create text style throughout several screens.",
+                                    "Provide guidance to create a consistent typography system across multiple visual products (app, keynotes, marketing materials)."],
                                   targetLevel: KnowledgeLevel.novice,
                                   currentLevel: nil,
                                   mandatoryLevel: KnowledgeLevel.novice)
+                
             ],
             
             SubjectArea.professionalGrowth: [
                 LearningObjective(id: 1, code: "PG05",
-                                  description: "Promote and match effectively professional opportunities to the Alumnae network",
+                                  description: "Promote and match effectively professional opportunities to the alumnae network",
                                   learningGoal: growthGoal,
                                   levelDescriptions: [
-                                    "Recognise the importance of being part of the Alumnae Academy network",
-                                    "Actively be part of the Alumnae network",
-                                    "Promote and match effectively professional opportunities to the Alumnae network",
-                                    "Provide guidance in order to implement the database of professional contacts"
+                                    "Recognise the importance of being part of the alumnae Academy network.",
+                                    "Actively be part of the alumnae network.",
+                                    "Promote and match effectively professional opportunities to the alumnae network.",
+                                    "Provide guidance in order to implement the database of professional contacts."
+                    ], targetLevel: KnowledgeLevel.expert, currentLevel: nil, mandatoryLevel: nil),
+                LearningObjective(id: 1, code: "PG05",
+                                  description: "Promote and match effectively professional opportunities to the alumnae network",
+                                  learningGoal: growthGoal,
+                                  levelDescriptions: [
+                                    "Recognise the importance of being part of the alumnae Academy network.",
+                                    "Actively be part of the alumnae network.",
+                                    "Promote and match effectively professional opportunities to the alumnae network.",
+                                    "Provide guidance in order to implement the database of professional contacts."
+                    ], targetLevel: KnowledgeLevel.expert, currentLevel: nil, mandatoryLevel: nil),
+                LearningObjective(id: 1, code: "PG05",
+                                  description: "Promote and match effectively professional opportunities to the alumnae network",
+                                  learningGoal: growthGoal,
+                                  levelDescriptions: [
+                                    "Recognise the importance of being part of the alumnae Academy network.",
+                                    "Actively be part of the alumnae network.",
+                                    "Promote and match effectively professional opportunities to the alumnae network.",
+                                    "Provide guidance in order to implement the database of professional contacts."
                     ], targetLevel: KnowledgeLevel.expert, currentLevel: nil, mandatoryLevel: nil)
                 ],
             
@@ -98,6 +238,8 @@ class ModelManager {
         switch subjectArea {
         case .design:
             return getObjectivesByArea()[.design]!
+        case .professionalGrowth:
+            return getObjectivesByArea()[.professionalGrowth]!
         default:
             return []
         }

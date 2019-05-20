@@ -14,6 +14,8 @@
 		6482620C228EFE1200A6E997 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620B228EFE1200A6E997 /* ModelManager.swift */; };
 		6482620E228F035000A6E997 /* SubjectAreaRepr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620D228F035000A6E997 /* SubjectAreaRepr.swift */; };
 		64826210228F174000A6E997 /* CoreJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620F228F174000A6E997 /* CoreJourneyViewController.swift */; };
+		6493F05922922E2200E2EC67 /* FullObjectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6493F05822922E2200E2EC67 /* FullObjectiveViewController.swift */; };
+		6493F05B2292510800E2EC67 /* FullLearningObjectiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6493F05A2292510800E2EC67 /* FullLearningObjectiveCell.swift */; };
 		64A3590D228EF7F400327963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3590C228EF7F400327963 /* AppDelegate.swift */; };
 		64A3590F228EF7F400327963 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3590E228EF7F400327963 /* HomeViewController.swift */; };
 		64A35912228EF7F400327963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A35910228EF7F400327963 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		6482620B228EFE1200A6E997 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		6482620D228F035000A6E997 /* SubjectAreaRepr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectAreaRepr.swift; sourceTree = "<group>"; };
 		6482620F228F174000A6E997 /* CoreJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreJourneyViewController.swift; sourceTree = "<group>"; };
+		6493F05822922E2200E2EC67 /* FullObjectiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullObjectiveViewController.swift; sourceTree = "<group>"; };
+		6493F05A2292510800E2EC67 /* FullLearningObjectiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLearningObjectiveCell.swift; sourceTree = "<group>"; };
 		64A35909228EF7F400327963 /* MyLearningJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLearningJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A3590C228EF7F400327963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64A3590E228EF7F400327963 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				64A3590E228EF7F400327963 /* HomeViewController.swift */,
 				6482620F228F174000A6E997 /* CoreJourneyViewController.swift */,
 				6451ED742291B3C600E3608E /* ObjectivesViewController.swift */,
+				6493F05822922E2200E2EC67 /* FullObjectiveViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				64A35915228EF7F700327963 /* LaunchScreen.storyboard */,
 				64EA6F13228F8C6500B3AB4C /* SubjectCell.swift */,
 				64E14C9A22921D7C00111784 /* LearningObjectiveCell.swift */,
+				6493F05A2292510800E2EC67 /* FullLearningObjectiveCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,12 +207,14 @@
 				6451ED752291B3C600E3608E /* ObjectivesViewController.swift in Sources */,
 				64EA6F12228F8B8700B3AB4C /* Utils.swift in Sources */,
 				64826204228EF9DE00A6E997 /* LearningGoal.swift in Sources */,
+				6493F05B2292510800E2EC67 /* FullLearningObjectiveCell.swift in Sources */,
 				64826208228EFA8400A6E997 /* Enums.swift in Sources */,
 				64E14C9B22921D7D00111784 /* LearningObjectiveCell.swift in Sources */,
 				64A3590F228EF7F400327963 /* HomeViewController.swift in Sources */,
 				64826210228F174000A6E997 /* CoreJourneyViewController.swift in Sources */,
 				6482620E228F035000A6E997 /* SubjectAreaRepr.swift in Sources */,
 				64EA6F14228F8C6500B3AB4C /* SubjectCell.swift in Sources */,
+				6493F05922922E2200E2EC67 /* FullObjectiveViewController.swift in Sources */,
 				64A3590D228EF7F400327963 /* AppDelegate.swift in Sources */,
 				6482620A228EFC5200A6E997 /* LearningObjective.swift in Sources */,
 			);

@@ -64,6 +64,7 @@ class CoreJourneyViewController: UICollectionViewController {
         cell.subjectLabel.text = subject.name
         return cell
     }
+    
 }
 
 // MARK: - Collection View Flow Layout Delegate
