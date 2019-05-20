@@ -21,11 +21,11 @@ final class Colors {
         case .coding:
             return UIColor(red:0.57, green:0.47, blue:0.45, alpha: alpha)
         case .successSkills:
-            return UIColor(red:0.38, green:0.28, blue:0.16, alpha: alpha)
+            return UIColor(red:0.78, green:0.62, blue:0.69, alpha: alpha)
         case .process:
-            return UIColor(red:0.49, green:0.48, blue:0.18, alpha: alpha)
+            return UIColor(red:0.73, green:0.26, blue:0.15, alpha: alpha)
         case .it:
-            return UIColor(red:0.55, green:0.62, blue:0.20, alpha: alpha)
+            return UIColor(red:0.41, green:0.41, blue:0.74, alpha: 0.8)
         }
     }
 }
@@ -44,7 +44,7 @@ final class Images {
         case .process:
             return UIImage(named: "mountains")!
         case .it:
-            return UIImage(named: "network")!
+            return UIImage(named: "cables")!
         }
     }
     

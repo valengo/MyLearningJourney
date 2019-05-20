@@ -7,35 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6451ED752291B3C600E3608E /* ObjectivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6451ED742291B3C600E3608E /* ObjectivesViewController.swift */; };
 		64826204228EF9DE00A6E997 /* LearningGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64826203228EF9DE00A6E997 /* LearningGoal.swift */; };
 		64826208228EFA8400A6E997 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64826207228EFA8400A6E997 /* Enums.swift */; };
 		6482620A228EFC5200A6E997 /* LearningObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64826209228EFC5200A6E997 /* LearningObjective.swift */; };
-		6482620C228EFE1200A6E997 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620B228EFE1200A6E997 /* Model.swift */; };
+		6482620C228EFE1200A6E997 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620B228EFE1200A6E997 /* ModelManager.swift */; };
 		6482620E228F035000A6E997 /* SubjectAreaRepr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620D228F035000A6E997 /* SubjectAreaRepr.swift */; };
-		64826210228F174000A6E997 /* CoreJourneyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620F228F174000A6E997 /* CoreJourneyCollectionViewController.swift */; };
+		64826210228F174000A6E997 /* CoreJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482620F228F174000A6E997 /* CoreJourneyViewController.swift */; };
 		64A3590D228EF7F400327963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3590C228EF7F400327963 /* AppDelegate.swift */; };
-		64A3590F228EF7F400327963 /* CoreJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3590E228EF7F400327963 /* CoreJourneyViewController.swift */; };
+		64A3590F228EF7F400327963 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3590E228EF7F400327963 /* HomeViewController.swift */; };
 		64A35912228EF7F400327963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A35910228EF7F400327963 /* Main.storyboard */; };
 		64A35914228EF7F700327963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A35913228EF7F700327963 /* Assets.xcassets */; };
 		64A35917228EF7F700327963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A35915228EF7F700327963 /* LaunchScreen.storyboard */; };
+		64E14C9B22921D7D00111784 /* LearningObjectiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E14C9A22921D7C00111784 /* LearningObjectiveCell.swift */; };
 		64EA6F12228F8B8700B3AB4C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA6F11228F8B8700B3AB4C /* Utils.swift */; };
 		64EA6F14228F8C6500B3AB4C /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA6F13228F8C6500B3AB4C /* SubjectCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6451ED742291B3C600E3608E /* ObjectivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesViewController.swift; sourceTree = "<group>"; };
 		64826203228EF9DE00A6E997 /* LearningGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningGoal.swift; sourceTree = "<group>"; };
 		64826207228EFA8400A6E997 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		64826209228EFC5200A6E997 /* LearningObjective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningObjective.swift; sourceTree = "<group>"; };
-		6482620B228EFE1200A6E997 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6482620B228EFE1200A6E997 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		6482620D228F035000A6E997 /* SubjectAreaRepr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectAreaRepr.swift; sourceTree = "<group>"; };
-		6482620F228F174000A6E997 /* CoreJourneyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreJourneyCollectionViewController.swift; sourceTree = "<group>"; };
+		6482620F228F174000A6E997 /* CoreJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreJourneyViewController.swift; sourceTree = "<group>"; };
 		64A35909228EF7F400327963 /* MyLearningJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLearningJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A3590C228EF7F400327963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64A3590E228EF7F400327963 /* CoreJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreJourneyViewController.swift; sourceTree = "<group>"; };
+		64A3590E228EF7F400327963 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		64A35911228EF7F400327963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A35913228EF7F700327963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A35916228EF7F700327963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64A35918228EF7F700327963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E14C9A22921D7C00111784 /* LearningObjectiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningObjectiveCell.swift; sourceTree = "<group>"; };
 		64EA6F11228F8B8700B3AB4C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		64EA6F13228F8C6500B3AB4C /* SubjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +87,9 @@
 		64A3591F228EF86E00327963 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				64A3590E228EF7F400327963 /* CoreJourneyViewController.swift */,
-				6482620F228F174000A6E997 /* CoreJourneyCollectionViewController.swift */,
+				64A3590E228EF7F400327963 /* HomeViewController.swift */,
+				6482620F228F174000A6E997 /* CoreJourneyViewController.swift */,
+				6451ED742291B3C600E3608E /* ObjectivesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				64A35913228EF7F700327963 /* Assets.xcassets */,
 				64A35915228EF7F700327963 /* LaunchScreen.storyboard */,
 				64EA6F13228F8C6500B3AB4C /* SubjectCell.swift */,
+				64E14C9A22921D7C00111784 /* LearningObjectiveCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,7 +112,7 @@
 				64826203228EF9DE00A6E997 /* LearningGoal.swift */,
 				64826207228EFA8400A6E997 /* Enums.swift */,
 				64826209228EFC5200A6E997 /* LearningObjective.swift */,
-				6482620B228EFE1200A6E997 /* Model.swift */,
+				6482620B228EFE1200A6E997 /* ModelManager.swift */,
 				6482620D228F035000A6E997 /* SubjectAreaRepr.swift */,
 			);
 			path = Model;
@@ -191,12 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6482620C228EFE1200A6E997 /* Model.swift in Sources */,
+				6482620C228EFE1200A6E997 /* ModelManager.swift in Sources */,
+				6451ED752291B3C600E3608E /* ObjectivesViewController.swift in Sources */,
 				64EA6F12228F8B8700B3AB4C /* Utils.swift in Sources */,
 				64826204228EF9DE00A6E997 /* LearningGoal.swift in Sources */,
 				64826208228EFA8400A6E997 /* Enums.swift in Sources */,
-				64A3590F228EF7F400327963 /* CoreJourneyViewController.swift in Sources */,
-				64826210228F174000A6E997 /* CoreJourneyCollectionViewController.swift in Sources */,
+				64E14C9B22921D7D00111784 /* LearningObjectiveCell.swift in Sources */,
+				64A3590F228EF7F400327963 /* HomeViewController.swift in Sources */,
+				64826210228F174000A6E997 /* CoreJourneyViewController.swift in Sources */,
 				6482620E228F035000A6E997 /* SubjectAreaRepr.swift in Sources */,
 				64EA6F14228F8C6500B3AB4C /* SubjectCell.swift in Sources */,
 				64A3590D228EF7F400327963 /* AppDelegate.swift in Sources */,

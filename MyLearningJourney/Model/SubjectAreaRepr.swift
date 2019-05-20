@@ -12,5 +12,5 @@ import Foundation
 struct SubjectAreaRepr {
     let id: Int
     let name: String
-    let subjectArea: SubjectArea
+    let area: SubjectArea
 }
